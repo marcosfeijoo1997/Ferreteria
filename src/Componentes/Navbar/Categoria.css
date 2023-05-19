@@ -1,0 +1,109 @@
+.Navbar ul li{
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+
+ 
+ 
+}
+
+.Navbar img {
+  width: 15%;
+  display: flex;
+  position: initial;
+}
+.Buscador {
+  width:70%;
+  height: 50px;
+  display: flex;
+  font-size: 20px;
+ 
+}
+.PrimerBar{
+  width: 100%;
+align-items: center;
+display: flex;
+background-color: rgb(248, 248, 248);
+}
+.SegundaBar {
+  background-color:#cf2e2e;
+  
+
+}
+.SegundaBar li {
+  font-size: 14px;
+  text-decoration: none;
+
+
+
+}
+
+.Categorias {
+
+  justify-content: space-between;
+  padding: 1%; 
+  margin: 0; 
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(206, 216, 224);
+  z-index: 1;
+  
+  
+  
+}
+.Categorias li {
+  font-size: 23px;
+  font-style:italic;
+
+;}
+  
+.Categorias li a {
+  font-size: 18px;
+ 
+text-decoration: none;
+color: black;
+font-weight: bold
+
+;}
+
+
+.Cart {
+  margin: auto;
+  padding: auto;
+}
+.padre{
+  height: 100%;
+  margin:0px;
+  padding: 0px;
+ 
+
+}
+
+.lista-hija {
+  position: absolute;
+ text-align: left;
+ top:100px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(206, 216, 224);
+  margin: 15px;
+  padding: 10px;
+
+  border-radius: 5%;
+  
+
+  
+}
+.lista-hija li {
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+
+/* Carrousel*/
+.carousel-indicators {
+  display:none ;
+
+}
