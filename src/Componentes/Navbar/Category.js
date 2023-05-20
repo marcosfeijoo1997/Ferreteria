@@ -26,17 +26,19 @@ return (<div>cargando...</div>)
    
       
 },[categoriaId]);
-return <div> {products.map(products=><div key={products.id}> 
-<div className="Card">
+return <div className="Card-container"> {products.map(products=>
+<div className="Card" key={products.id}>
 <img src={products.Imagen}/><ul>
-    <h2>{products.Titulo}</h2>
 
-    <li><h3 className="Precio">${products.Precio}</h3>
-  
-    </li>
+
+    <a>{products.Titulo}</a>
+
+  <br/>
+    <a className="Precio"> ${products.Precio}</a>
+    
     </ul>
     </div>
-    </div>)}</div> ;
+    )}</div> ;
 }
   
 
