@@ -2,9 +2,9 @@
 import './App.css';
 import Category from './Componentes/Body/Category';
 import Navbar from './Componentes/Navbar/Navbar';
-import { BrowserRouter, Routes,Route,Router } from 'react-router-dom';
+import { BrowserRouter, Routes,Route} from 'react-router-dom';
 import Footer from './Componentes/Footer/Footer'
-import CategoryList from './Componentes/Body/CategoryList';
+
 
 
 
@@ -26,7 +26,14 @@ function App() {
             
             
 					/>
+           <Route
+						path="/Category/:categoriaId/:subCategoria"
+						element={<Category/>}
+            
+            
+					/>
           </Routes>
+
 
         
         

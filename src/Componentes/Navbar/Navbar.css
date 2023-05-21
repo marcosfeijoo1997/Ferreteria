@@ -1,5 +1,7 @@
 /*Navbar*/
-
+:root {
+  --navbar:rgb(206, 216, 224);
+}
 
 .Navbar ul li{
     display: inline-block;
@@ -27,16 +29,25 @@
     width: 100%;
   align-items: center;
   display: flex;
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(255, 255, 255);
   }
-  .SegundaBar {
-    background-color:#cf2e2e;
-    
+  .logo {
+    padding: 0px;
+    margin:0px;
+    width: 17%;
+  }
+  .PrimerBar img {
+    width: 100%;
+  margin: 0px;
+padding: 0px;  }
   
-  }
+.SegundaBar{
+  height: 100%;
+}
   .SegundaBar li {
     font-size: 14px;
     text-decoration: none;
+    
   
   
   
@@ -46,4 +57,70 @@
 .carousel-indicators {
     display:none ;
   }
+
+  .dropdown-toggle {
+    background-color:transparent;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: none;
+    
+    
+  }
+  .dropdown-toggle:hover{    background-color:transparent;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: none;
+    
+
+  }
+
+  /*categorias**/
+  .Categorias {
+
+    justify-content: space-between;
+
+    padding: 0;
+    margin: 0; 
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--navbar);
+    z-index: 1;
+    height: 100%;
+    
+    
+    
+  }
+  .Categorias li {
+    font-size: 23px;
+    font-style:italic;
   
+  ;}
+    
+  .Categorias li a {
+    font-size: 18px;
+   
+  text-decoration: none;
+  color: black;
+  font-weight: bold
+  
+  ;}
+  
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+    width: auto
+   ;
+}
+
+
+.dropdown-menu {
+  background-color: var(--navbar);
+  position: absolute;
+  top:90%;
+  
+}
