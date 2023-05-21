@@ -1,42 +1,4 @@
-.Navbar ul li{
-  display: inline-block;
-  list-style: none;
-  text-decoration: none;
 
- 
- 
-}
-
-.Navbar img {
-  width: 15%;
-  display: flex;
-  position: initial;
-}
-.Buscador {
-  width:70%;
-  height: 50px;
-  display: flex;
-  font-size: 20px;
- 
-}
-.PrimerBar{
-  width: 100%;
-align-items: center;
-display: flex;
-background-color: rgb(248, 248, 248);
-}
-.SegundaBar {
-  background-color:#cf2e2e;
-  
-
-}
-.SegundaBar li {
-  font-size: 14px;
-  text-decoration: none;
-
-
-
-}
 
 .Categorias {
 
@@ -92,43 +54,38 @@ font-weight: bold
 }
 .lista-hija li {
   font-size: 18px;
-  font-weight: 500;
- 
-
-  
+  font-weight: 500;  
 }
 
 
-/* Carrousel*/
-.carousel-indicators {
-  display:none ;
-
-
-}
 
 /*Card*/
 
 .Card-container {
-width: 100%;
+width: 70%;
 display: flex;
+flex-wrap: wrap;
+margin:0px;
+padding: 0px;
 flex-direction:row;
 align-items: center;
 justify-content: center;
-
-
 }
 .Card{
-  width: 100%;
+  width: 25%;
+ padding: 2%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
+  
  
 
   
 }
 .Card img{
   max-width: 25%;
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -144,11 +101,38 @@ cursor:pointer
 
 .Card  {
   font-size: 24px;
-  color:rgb(0, 0, 0);
   text-decoration: none;
-  color:rgb(194, 100, 23);
-  margin: auto;
+  margin: 0.5%;
   padding: auto;
+width: 30%;
+border: solid 1px;
+height: 50%;
+
+border-radius: 3%;
+
+
+
+
+  
+}
+.Card:hover {
+  font-size: 24px;
+  text-decoration: none;
+  margin: 0.5%;
+  padding: auto;
+box-sizing: border-box;
+width: 31%;
+border: solid 1px;
+height: 51%;
+box-shadow: 0 5px 7px rgb(100, 0, 0);
+cursor: pointer;
+
+
+
+  
+}
+.Card a {
+  color:rgb(194, 100, 23);
 }
 .Card:hover {
   font-size: 24px;
@@ -166,4 +150,21 @@ color: black;
 }
 .Precio:hover {
   color:black
+}
+
+/*CategoryList*/
+.Container 
+{
+  display: flex;
+}
+
+.Category-container {
+  background-color: brown;
+  width: 25%;
+  height: 200px;
+}
+.Card-container {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
 }

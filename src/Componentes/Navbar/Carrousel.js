@@ -1,7 +1,7 @@
 import Img1 from '../../Assets/img1.jpg'
 import Img2 from '../../Assets/img2.jpg'
 import Img3 from '../../Assets/img3.jpg'
-import '../../Componentes/Navbar/Categoria.css'
+import './Navbar.css'
 
 const Carrousel=()=>{
     return (

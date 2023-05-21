@@ -1,9 +1,10 @@
 
 import './App.css';
-import Category from './Componentes/Navbar/Category';
+import Category from './Componentes/Body/Category';
 import Navbar from './Componentes/Navbar/Navbar';
 import { BrowserRouter, Routes,Route,Router } from 'react-router-dom';
 import Footer from './Componentes/Footer/Footer'
+import CategoryList from './Componentes/Body/CategoryList';
 
 
 
@@ -13,6 +14,7 @@ function App() {
       
     <BrowserRouter>
       <Navbar/>
+
       
       
    
@@ -25,6 +27,8 @@ function App() {
             
 					/>
           </Routes>
+
+        
         
         </BrowserRouter>
         <Footer/>
