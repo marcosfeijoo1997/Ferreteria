@@ -22,30 +22,31 @@ const Navbar = () => {
                     placeholder="Buscar productos..."
                     className="Buscador"
                 ></input>
-                
+      <NavLink to='/Cart'>
                 <div className="Cart">
                     Carrito/Precio         
                    
-                </div>
+                </div></NavLink>
             </div>
             <div className="SegundaBar">
                 <ul className="Categorias">
                   
-                        <NavLink to="/Category/Ferreteria">
+                     
                                   <div className="dropdown elemento-desplegable">
+                                  <NavLink to="/Category/ferreteria">
   <button className=" dropdown-toggle  menu-desplegable" >
 Ferreteria
   </button>
+  </NavLink>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <Link to="/Category/Ferreteria/Bocallaves" className="dropdown-item">
-        Juegos de bocallaves
-      </Link>
-     
-    <p className="dropdown-item">Alambres</p>
-    <p className="dropdown-item">Something else here</p>
+      
+  <Link to="/Category/ferreteria/bocallaves"><p className="dropdown-item">Set de bocallaves</p></Link>
+  <Link to="/Category/ferreteria/alambres"><p className="dropdown-item">Alambres</p></Link>
+  <Link to="/Category/ferreteria/mechas"><p className="dropdown-item">Mechas</p></Link>
+
   </div>
 </div>
-                        </NavLink>
+                       
 
                     
                  

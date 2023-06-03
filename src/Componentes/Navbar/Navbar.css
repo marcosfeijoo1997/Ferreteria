@@ -1,6 +1,6 @@
 /*Navbar*/
 :root {
-  --navbar:rgb(206, 216, 224);
+  --navbar:rgba(206, 216, 224, 0.37);
 }
 
 .Navbar ul li{
@@ -61,6 +61,7 @@ padding: 0px;  }
   .dropdown-toggle {
     background-color:transparent;
     font-size: 18px;
+    font-family: inherit;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -96,13 +97,12 @@ padding: 0px;  }
   }
   .Categorias li {
     font-size: 23px;
-    font-style:italic;
+    
   
   ;}
     
   .Categorias li a {
     font-size: 18px;
-   
   text-decoration: none;
   color: black;
   font-weight: bold

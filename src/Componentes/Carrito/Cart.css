@@ -1,0 +1,36 @@
+.Contador {
+   background-color: rgba(206, 216, 224, 0.37);
+   display: inline-flex;
+   border-radius: 5%;
+   border: solid 1px;
+   width: 35%;
+
+   
+}
+.Contador p {
+    align-items: center;
+    margin: 0px;
+    margin-top:0px ;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: hidden;
+    flex-grow:1;
+   
+}
+.Contador button {
+    background-color: rgba(206, 216, 224, 0.582);
+ width: 33%;
+    font-size:x-large;
+    border: hidden;
+    color: rgb(0, 0, 0);
+    align-items: center;
+
+
+}
+.Contador button[disabled] {
+    color:rgba(87, 87, 87, 0.39)
+}
+.Agregar {
+    width: 35%;
+    height: auto;
+}
