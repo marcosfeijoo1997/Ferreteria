@@ -3,6 +3,7 @@ import './Navbar.css'
 import {useState} from 'react';
 import {NavLink,Link} from 'react-router-dom';
 import Carrousel from './Carrousel';
+import CartWidget from '../Carrito/CartWidget';
 
 
 
@@ -24,7 +25,7 @@ const Navbar = () => {
                 ></input>
       <NavLink to='/Cart'>
                 <div className="Cart">
-                    Carrito/Precio         
+                    <CartWidget/>      
                    
                 </div></NavLink>
             </div>

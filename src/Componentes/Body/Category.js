@@ -72,8 +72,7 @@ return (
               <span>{product.titulo}</span>
               <br />
               <span className="Precio"> ${product.precio},00</span>
-              <div className="probando">{product.id}</div>
-              {product.id}
+              
             </Link>
           ))
         )}

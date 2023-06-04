@@ -8,7 +8,7 @@ const Cart = () => {
     if(cart.length===0)
   {
     return (<>
-    <div>hola, no tengo elementos</div></>
+    <div>Carrito vacio</div></>
   )}
   else {return (
  <>{cart.map(product=><ItemCart key={product.id} product={product}/>)}
