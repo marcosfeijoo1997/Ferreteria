@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom"
 import {getFirestore,collection,getDocs, DocumentSnapshot,where,query} from 'firebase/firestore'
 import { Link } from "react-router-dom"
 import CategoryList from "./CategoryList"
+import './Categoria.css'
 
 
 const Category=()=>{
@@ -59,9 +60,13 @@ const Category=()=>{
 return (
 
 
-<div className="Container"><div className="Filtros-Container">
-
-    <CategoryList/></div>
+<div className="Container">
+  
+  
+  <div className="Filtros-Container">
+  <CategoryList/>
+ </div>
+    
     <div className="Card-container">
         {isLoading ? ( // Mostrar el cartel de carga si isLoading es true
           <div>Cargando...</div>

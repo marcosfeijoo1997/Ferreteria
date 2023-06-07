@@ -92,12 +92,7 @@ Jardín y piletas
     <p className="dropdown-item" href="#">Action</p>
     <p className="dropdown-item" href="#">Another action</p>
     <p className="dropdown-item" href="#">Something else here</p>
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
+ 
   </div>
 </div>
                         </NavLink>
@@ -146,32 +141,9 @@ Seguridad
                         </NavLink>
                     
                 
-                        <NavLink>
-                        <div className="dropdown">
-  <button className=" dropdown-toggle" >
-Climatización
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
-  </div>
-</div>
-                        </NavLink>
+                
                     
                     
-                        <NavLink>
-                        <div className="dropdown">
-  <button className=" dropdown-toggle" >
-Camping
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
-  </div>
-</div>
-                        </NavLink>
                     
                     <div></div>
                 </ul>

@@ -35,19 +35,73 @@
     height: auto;
 }
 
-.Container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+
+.CartContainer {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 50% 22.5% 15% 22.5%;
+    justify-items: start;
+    padding: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: solid 1px;
+    
 }
-.Head  {
-    width: 100%;
-    background-color: rgb(255, 0, 0);
-    columns: 1;
-   
-  }
-  .Body {
-    background-color: blue;
-    width: 100%;
-    columns: 2;
-  }
+.Productos {
+    display: flex;
+    
+}
+.Productos img {
+    width: 15%;
+}
+.Productos .cruz{
+border: solid;
+border-radius: 100%;    
+}
+.Head {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto  
+}
+
+.CartContainerMap {
+    display: grid;
+    width: 60%;
+    grid-template-columns: 50% 22.5% 15% 22.5%;
+    justify-items: start;
+    padding: 1%;
+    font-size: 1.2em;
+    border: solid 1px;
+    
+}
+
+.CartContainerMap p{
+   width: 60%;
+font-family:math;
+}
+
+.centrar {
+  height: 100%;
+  margin-right: 5%;
+ cursor: pointer;
+}
+
+.Cart {
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 1%;
+    
+
+}
+.Cart p {
+    margin-right:5%;
+    border: solid 1px;
+    width: auto;
+    padding: 0.5%;
+    border-radius: 10px;
+   color: brown;
+}
+
+  
