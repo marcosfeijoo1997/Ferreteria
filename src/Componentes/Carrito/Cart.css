@@ -39,7 +39,7 @@
 .CartContainer {
     display: grid;
     width: 60%;
-    grid-template-columns: 50% 22.5% 15% 22.5%;
+    grid-template-columns: 50% 17.5% 15% 17.5%;
     justify-items: start;
     padding: 1%;
     font-size: 1.2em;
@@ -68,7 +68,7 @@ border-radius: 100%;
 .CartContainerMap {
     display: grid;
     width: 60%;
-    grid-template-columns: 50% 22.5% 15% 22.5%;
+    grid-template-columns: 50% 17.5% 15% 17.5%;
     justify-items: start;
     padding: 1%;
     font-size: 1.2em;
@@ -82,10 +82,15 @@ font-family:math;
 }
 
 .centrar {
-  height: 100%;
-  margin-right: 5%;
- cursor: pointer;
+        margin-right:5%;
+        border: solid 1px;
+        padding: 0.5%;
+        border-radius: 10px;
+        color: brown;
+
 }
+
+
 
 .Cart {
     display: flex;
@@ -95,13 +100,16 @@ font-family:math;
     
 
 }
-.Cart p {
+
+.Cart a {
     margin-right:5%;
     border: solid 1px;
-    width: auto;
     padding: 0.5%;
     border-radius: 10px;
-   color: brown;
+    color: brown;
+    text-decoration: none;
+   
 }
 
-  
+
+

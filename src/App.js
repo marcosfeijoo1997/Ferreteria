@@ -7,12 +7,17 @@ import Footer from './Componentes/Footer/Footer';
 import ItemDetailContainer from './Componentes/ItemDetail/ItemDetailContainer';
 import CartProvider from './Componentes/Carrito/CartContext';
 import Cart from './Componentes/Carrito/Cart'
+import { SearchProvider } from './Componentes/Navbar/SearchContext';
 
 function App() {
   return (
     <div className="App">
       
+      
     <BrowserRouter>
+    <SearchProvider>
+
+      
   <CartProvider>
       <Navbar/>
 
@@ -61,6 +66,7 @@ function App() {
        
 
           </CartProvider>
+          </SearchProvider>
         
         </BrowserRouter>
         <Footer/>

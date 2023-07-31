@@ -47,8 +47,7 @@ background-color: var(--navbar);
 background-color: aliceblue
 }
 .Card{
-  width: 33%;
- padding: 2%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

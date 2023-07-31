@@ -16,14 +16,15 @@ const CartProvider = ({children}) => {
     }
 
   const totalPrice=()=>{
-    return cart.reduce((prev,act)=>prev+act.quantity*act.price,0);
+    return cart.reduce((prev,act)=>prev+act.quantity*act.precio,0);
   }
 
 const clearCart=()=>setCart([]);
 const isInCart=(id)=>cart.find(product=>product.id===id)?true:false;
 const removerProduct=(id)=>setCart(cart.filter(product=>product.id!==id))
 const totalProducts=()=>cart.reduce((acumulador,productoActual)=>acumulador+productoActual.quantity,0)
-console.log('carrito:', cart);
+
+
 
     
   return (

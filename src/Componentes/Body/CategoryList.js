@@ -1,26 +1,28 @@
+import { useState } from 'react'
 import './Categoria.css'
 
-const CategoryList=()=>{
+const CategoryList=({setPriceMinjsx,setPriceMaxjsx})=>{
+    const [min,setMin]=useState('')
+    const [max,setMax]=useState('')
+
+    const precioMin=(e)=>{
+        setMin(e.target.value)
+        setPriceMinjsx(e.target.value)
+        
+    }
+    const precioMax=(e)=>{
+        setMax(e.target.value)
+        setPriceMaxjsx(e.target.value)
+    }
+   
     return (<div className='Filtros'>
-        <h3>Marcas</h3>
-        <select>
-            <option>Cualquier Marca</option>
-            <option>Marca 1</option>
-            <option>Marca 2</option>
-            <option>Marca 3</option>
-        </select>
-        <hr/>
-      
+     
       <h3>Precio</h3>
-<input className='filtro-precio' placeholder='Precio mínimo'></input>-
-<input className='filtro-precio' placeholder='Precio máximo'></input>
+      $
+<input className='filtro-precio' placeholder='Mínimo' value={min} onChange={precioMin}></input>$
+<input className='filtro-precio' placeholder='Máximo' value={max} onChange={precioMax}></input>
 <hr/>
-<h3>Ordenar por</h3>
-<select> 
-    <option>Predeterminado</option>
-    <option>Menor precio</option>
-    <option>Mayor precio</option>
-</select>
+
 
 
 
