@@ -54,44 +54,46 @@ Ferreteria
          
                   
 
-                
+<div className="dropdown">
                         <NavLink to="/Category/maquinas">
-                        <div className="dropdown">
+               
   <button className=" dropdown-toggle" >
 Máquinas
-  </button>
+  </button>  </NavLink>
     <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <Link to="/Category/maquinas/taladros" className='Link'> <p className="dropdown-item" href="#">Taladros</p></Link>
   <Link to="/Category/maquinas/amoladoras">    <p className="dropdown-item" href="#">Amoladoras</p></Link>
   <Link to="/Category/maquinas/soldadoras">  <p className="dropdown-item" href="#">Soldadoras</p></Link>
   </div>
-</div>
-                        </NavLink>
-                    
+
+                      </div>
+                        <div className="dropdown">
                     
                         <NavLink to="/Category/electricidad">
-                        <div className="dropdown">
+                   
                       
   <button className=" dropdown-toggle" >
 Electricidad
-  </button>
+  </button>     </NavLink>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
   <Link to="/Category/electricidad/tomas">  <p className="dropdown-item" href="#">Tomas</p></Link>
   <Link to="/Category/electricidad/cables"> <p className="dropdown-item" href="#">Cables</p></Link>
   <Link to="/Category/electricidad/luces">   <p className="dropdown-item" href="#">Luces</p></Link>
   </div>
   
-</div><NavLink/>
-                        </NavLink>
+
+
+                   
+                        </div>
                     
                 
-                  
+                        <div className="dropdown">
                 
                         <NavLink to="/Category/pinturas">
-                        <div className="dropdown">
+                
   <button className=" dropdown-toggle" >
 Pintureria
-  </button>
+  </button>       </NavLink>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <p className="dropdown-item" href="#">Esmaltes sinteticos</p>
     <p className="dropdown-item" href="#">Pinturas latex</p>
@@ -99,21 +101,21 @@ Pintureria
   </div>
 </div>
                           
-                        </NavLink>
-                    
+                 
+<div className="dropdown">
                 
                         <NavLink>
-                        <div className="dropdown">
+                  
   <button className=" dropdown-toggle" >
 Seguridad
-  </button>
+  </button>       </NavLink>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <p className="dropdown-item" href="#">Proteccion ocular</p>
     <p className="dropdown-item" href="#">Indumentaria</p>
 
   </div>
 </div>
-                        </NavLink>
+                 
                     
                 
                 
