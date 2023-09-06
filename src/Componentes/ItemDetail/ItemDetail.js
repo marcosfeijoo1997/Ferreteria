@@ -24,7 +24,7 @@ const ItemDetail =({product})=>{
     addProduct(product,quantity)}
     return (isLoading?(<div>cargando...</div>):(
         <div className="detailContainer">
-             <img src={product.imagen}/>
+             <img src={product.imagen} alt="ProductImg3"/>
         <div className="TextContainer">
         <h1>{product.titulo}</h1>
         <p>{product.descripcion}</p>

@@ -31,7 +31,7 @@ const Categoryjsx = ({isLoading,products,setPriceMax,setPriceMin}) => {
           ) : (
             products.map((product) => (
               <Link className="Card" key={product.id} to={`/Detalle/${product.id}`}>
-                <img src={product.imagen}/>
+                <img src={product.imagen} alt='productImg'/>
                 <span>{product.titulo}</span>
                 <br />
                 <span className="Precio"> ${product.precio},00</span>
