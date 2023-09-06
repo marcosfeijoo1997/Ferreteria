@@ -1,6 +1,6 @@
 import Logo from '../../Assets/logo_ferreteria-removebg-preview.png';
 import './Navbar.css'
-import {useState} from 'react';
+
 import {NavLink,Link} from 'react-router-dom';
 import Carrousel from './Carrousel';
 import CartWidget from '../Carrito/CartWidget';
@@ -35,7 +35,7 @@ const {setSearch}=useSearchContext()
                      
                                   <div className="dropdown elemento-desplegable">
                                   <NavLink to="/Category/ferreteria">
-  <button className=" dropdown-toggle  menu-desplegable" >
+  <button className="dropdown-toggle  menu-desplegable" >
 Ferreteria
   </button>
   </NavLink>
@@ -60,70 +60,45 @@ Ferreteria
   <button className=" dropdown-toggle" >
 Máquinas
   </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
+    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <Link to="/Category/maquinas/taladros" className='Link'> <p className="dropdown-item" href="#">Taladros</p></Link>
+  <Link to="/Category/maquinas/amoladoras">    <p className="dropdown-item" href="#">Amoladoras</p></Link>
+  <Link to="/Category/maquinas/soldadoras">  <p className="dropdown-item" href="#">Soldadoras</p></Link>
   </div>
 </div>
                         </NavLink>
                     
                     
-                        <NavLink to="/Category/herramientas-electricas">
+                        <NavLink to="/Category/electricidad">
                         <div className="dropdown">
+                      
   <button className=" dropdown-toggle" >
 Electricidad
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
+  <Link to="/Category/electricidad/tomas">  <p className="dropdown-item" href="#">Tomas</p></Link>
+  <Link to="/Category/electricidad/cables"> <p className="dropdown-item" href="#">Cables</p></Link>
+  <Link to="/Category/electricidad/luces">   <p className="dropdown-item" href="#">Luces</p></Link>
   </div>
-</div>
+  
+</div><NavLink/>
                         </NavLink>
                     
                 
-                        <NavLink>
-                        <div className="dropdown">
-  <button className=" dropdown-toggle" >
-Jardín y piletas
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
- 
-  </div>
-</div>
-                        </NavLink>
+                  
                 
-                
-                        <NavLink>
+                        <NavLink to="/Category/pinturas">
                         <div className="dropdown">
   <button className=" dropdown-toggle" >
 Pintureria
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
+    <p className="dropdown-item" href="#">Esmaltes sinteticos</p>
+    <p className="dropdown-item" href="#">Pinturas latex</p>
+    <p className="dropdown-item" href="#">Barnices</p>
   </div>
 </div>
                           
-                        </NavLink>
-                    
-                    
-                        <NavLink>
-                        <div className="dropdown">
-  <button className=" dropdown-toggle" >
-Sanitarios
-  </button>
-  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
-  </div>
-</div>
                         </NavLink>
                     
                 
@@ -133,9 +108,9 @@ Sanitarios
 Seguridad
   </button>
   <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <p className="dropdown-item" href="#">Action</p>
-    <p className="dropdown-item" href="#">Another action</p>
-    <p className="dropdown-item" href="#">Something else here</p>
+    <p className="dropdown-item" href="#">Proteccion ocular</p>
+    <p className="dropdown-item" href="#">Indumentaria</p>
+
   </div>
 </div>
                         </NavLink>
@@ -145,7 +120,7 @@ Seguridad
                     
                     
                     
-                    <div></div>
+                
                 </ul>
             </div>
             <Carrousel />

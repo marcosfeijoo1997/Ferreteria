@@ -1,4 +1,5 @@
 import React from 'react'
+import './Navbar.css'
 import { useState } from 'react'
 
 const Searcher = ({setSearch}) => {
@@ -14,7 +15,7 @@ const Searcher = ({setSearch}) => {
     
 
   return (
-    <div><input placeholder='buscar productos' value={valorInput} onChange={filtrar} /></div>
+    <div className='searcher'><input placeholder='buscar productos ' value={valorInput} onChange={filtrar} /></div>
   )
 }
 

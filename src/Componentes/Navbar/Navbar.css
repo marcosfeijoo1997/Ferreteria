@@ -1,6 +1,6 @@
 /*Navbar*/
 :root {
-  --navbar:rgba(206, 216, 224, 0.37);
+  --navbar:rgba(206, 216, 224);
 }
 
 .Navbar ul li{
@@ -118,9 +118,53 @@ padding: 0px;  }
 }
 
 
+
+.responsivePhone {
+  background-color: blue;
+}
+
 .dropdown-menu {
-  background-color: var(--navbar);
+  background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   top:90%;
-  
+  text-decoration: none;
+}
+
+
+.Lupa {
+
+  position: relative;
+  left: 20%;
+
+}
+
+
+.searcher input{
+
+width: 50%;
+  height: 200%;
+  text-indent: 35%;
+
+
+ 
+ 
+
+
+}
+.searcher {
+  display: flex;
+  width: 100%;
+  height: 2vw; 
+  position: relative;
+  align-items:  center;
+  justify-content: center;
+  font-size: 1.5vw;
+
+
+}
+.searcher input::placeholder{
+font: 500;
+font-size: 1.5vw;
+text-align: center;
+text-indent: 0;
 }
