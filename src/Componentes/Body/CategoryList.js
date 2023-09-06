@@ -19,7 +19,8 @@ const CategoryList=({setPriceMinjsx,setPriceMaxjsx})=>{
      
       <h3>Precio</h3>
       $
-<input className='filtro-precio' placeholder='Mínimo' value={min} onChange={precioMin}></input>$
+<input className='filtro-precio' placeholder='Mínimo' value={min} onChange={precioMin}></input><br/>
+$
 <input className='filtro-precio' placeholder='Máximo' value={max} onChange={precioMax}></input>
 <hr/>
 
