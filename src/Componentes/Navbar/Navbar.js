@@ -33,11 +33,13 @@ const {setSearch}=useSearchContext()
                         
 <nav role="navigation" className='navigation'>
     <div id="menuToggle">
-  
     <input type="checkbox" />
+  
+
     
  
     <span></span>
+
     <span></span>
     <span></span>
     
