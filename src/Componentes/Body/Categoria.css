@@ -147,6 +147,8 @@ width: 100%;
 height: auto;  
 margin: 0px;
 padding: 0px;
+background-color: aliceblue;
+color:black
 
 }
 
@@ -167,6 +169,7 @@ padding: 0px;
 .Filtros-Container{
   background-color: rgba(224, 224, 224, 0.87);
   width: 20%;
+  height: 50vh;
   padding: 1%;
 }
 .Filtros{

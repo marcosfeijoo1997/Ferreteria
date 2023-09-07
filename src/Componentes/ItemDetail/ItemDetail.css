@@ -4,17 +4,24 @@
    display: flex;
    flex-direction: column;
     align-items: initial;
-    width: 40%;
+    width: 70%;
     margin: 10%;
     padding: 0px;
+
 }
 .detailContainer
-{
+{width: 100%;
     display: flex;
     justify-content: end;
+    background-color: white;
+    color: black;
+    font-size: 1vw;
+    align-items: center;
 }
 .detailContainer img{
-    width: auto;
-    height: auto;
+ display: flex;
+    width: 30%;
+    height: 50%;
+  
 
 }

@@ -38,11 +38,13 @@
   }
   .PrimerBar img {
     width: 100%;
-  margin: 0px;
+    height: auto;
+  margin: 5px;
 padding: 0px;  }
   
 .SegundaBar{
   height: 100%;
+  width: 100%;
 
 }
 
@@ -53,6 +55,14 @@ padding: 0px;  }
   
   
   
+  }
+
+  .CartIcon {
+    position: relative;
+
+
+  
+   
   }
   /*Carrousel*/
 
@@ -86,14 +96,17 @@ padding: 0px;  }
   .Categorias {
 
     justify-content: space-between;
+ 
 
-    padding: 0;
-    margin: 0; 
+    padding-right:  10%;
+    margin:0px;
+ 
     display: flex;
     justify-content: space-between;
     background-color: var(--navbar);
     z-index: 1;
     height: 100%;
+ 
     
     
     
@@ -103,8 +116,16 @@ padding: 0px;  }
       
   
     }
+    .Lupa {
+
+      display: none;
+     }
    
-  
+     .PrimerBar img {
+      width: 30vw;
+      height: auto;
+    margin: 5px;
+  padding: 0px;  }
   
   }
   @media(min-width:600px){
@@ -120,6 +141,20 @@ padding: 0px;  }
     display: none;
     
   }}
+  @media(max-width:800px) {
+    .Categorias {  display: none;
+      
+  
+    }
+    .Lupa {
+
+      display: none;
+     }
+   
+  
+  }
+  
+  
   .menu {
     z-index: 2;
  
@@ -150,19 +185,13 @@ padding: 0px;  }
   
 }
 
-.Lupa {
-
-  position: relative;
-  left: 20%;
-
-}
 
 
 .searcher input{
 
 width: 50%;
-  height: 200%;
-  text-indent: 35%;
+height: 5vh;
+
 
 
  
@@ -172,7 +201,7 @@ width: 50%;
 }
 .searcher {
   display: flex;
-  width: 100%;
+  width: 75%;
   height: 2vw; 
   position: relative;
   align-items:  center;
@@ -195,7 +224,7 @@ body
   padding: 0;
   
   /* make it look decent enough */
-  background: #232323;
+
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }

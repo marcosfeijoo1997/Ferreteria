@@ -1,20 +1,25 @@
+.ContadorContainer {
+    display: grid;
+    align-items: center;
+}
 .Contador {
    background-color: rgba(206, 216, 224, 0.37);
    display: inline-flex;
-   border-radius: 5%;
    border: solid 1px;
    width: 35%;
+   display: flex;
+   align-items: center;
+
 
    
 }
 .Contador p {
     align-items: center;
     margin: 0px;
-    margin-top:0px ;
-    margin-bottom: 0px;
     padding: 0px;
     border: hidden;
     flex-grow:1;
+    font-size: 100%;
    
 }
 .Contador button {
@@ -38,12 +43,24 @@
 
 .CartContainer {
     display: grid;
-    width: 60%;
+    width: 100%;
+    grid-template-columns: 50% 17.5% 15% 17.5%;
+    justify-items: center;
+    padding: 1%;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: solid 1px;
+    
+    
+}
+
+.CartContainerMap {
+    display: grid;
+    width: 100%;
     grid-template-columns: 50% 17.5% 15% 17.5%;
     justify-items: start;
     padding: 1%;
     font-size: 1.2em;
-    font-weight: bold;
     border: solid 1px;
     
 }
@@ -53,11 +70,44 @@
 }
 .Productos img {
     width: 15%;
+    height: auto;
 }
 .Productos .cruz{
 border: solid;
 border-radius: 100%;    
 }
+@media(max-width:600px){
+    .Cart{
+        display: grid;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-left: 1%;
+       
+    
+        
+    }
+    .CartContainer {
+ 
+        font-size: 3vw;
+  
+        
+        
+    }
+    .CartContainerMap {
+    
+        font-size: 2vw;
+
+    }
+    .CartContainerMap p{
+    display: flex;
+    justify-content: center;
+
+    }
+
+}
+
+
+
 .Head {
     display: flex;
     justify-content: center;
@@ -65,16 +115,6 @@ border-radius: 100%;
     padding: auto  
 }
 
-.CartContainerMap {
-    display: grid;
-    width: 60%;
-    grid-template-columns: 50% 17.5% 15% 17.5%;
-    justify-items: start;
-    padding: 1%;
-    font-size: 1.2em;
-    border: solid 1px;
-    
-}
 
 .CartContainerMap p{
    width: 60%;
@@ -86,17 +126,23 @@ font-family:math;
         border: solid 1px;
         padding: 0.5%;
         border-radius: 10px;
+        height: 10vh;
         color: brown;
+        display: flex;
+        align-items: center;
 
+}
+.bi-x-circle {
+    color: brown;
 }
 
 
-
 .Cart {
-    display: flex;
+    display: grid;
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 1%;
+    justify-content: center;
     
 
 }
@@ -111,5 +157,20 @@ font-family:math;
    
 }
 
+.botones {
+
+    display: flex;
+    justify-content: center;
+}
+
+.contenido2 form{
+    display: grid;
+    width: 60%;
+
+}
+.contenido2 ::placeholder{
+ text-align: center;
+ display: flex;
 
 
+}

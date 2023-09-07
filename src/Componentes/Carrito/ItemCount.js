@@ -11,13 +11,13 @@ import './Cart.css'
 
 
         return (
-        <div><div className='Contador'>
+        <div className='ContadorContainer'><div className='Contador'>
             <button onClick={decrece}  disabled={count <= 1}>-</button>
             <p>{count}</p>
             <button onClick={crece} disabled={count >= 5}>+</button>  
         
          
-        </div><br/>
+        </div>
            <button className='Agregar' onClick={()=>onAdd(count)}>Agregar al carrito</button>
            </div>
       )
