@@ -165,7 +165,7 @@ padding: 0px;
 /*CategoryList*/
 
 .Filtros-Container{
-  background-color: rgba(206, 216, 224, 0.37);
+  background-color: rgba(224, 224, 224, 0.87);
   width: 20%;
   padding: 1%;
 }
@@ -190,7 +190,8 @@ padding: 0px;
 
 @media (max-width:1100px){
   .Filtros-Container{
-    background-color: rgb(255, 255, 255);
+   
+
     width: 40%;
     padding: 1%;
   }
@@ -208,7 +209,7 @@ padding: 0px;
 
 @media (max-width:767px){
   .Filtros-Container{
-    background-color: rgb(255, 255, 255);
+  
     width: 40%;
     padding: 1%;
   }
