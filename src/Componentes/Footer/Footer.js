@@ -4,8 +4,11 @@ const Footer = () => {
   return (
     <div className='footer'>
 <div><h1>Ferreteria Dufer</h1>
-<p>Somos un empresa familiar con más de 70 años que tiene como objetivo fundamental la atención de herreros y talleres metalúrgicos. Procuramos estar cerca de la gente para contribuir al bienestar de la comunidad.
-</p>
+<p>Hacia el año 1981, en sus inicios se estableció con la iniciativa de llevar a cabo la actividad comercial de venta de máquinas, herramientas y productos afines al mercado industrial de aquellos tiempos.
+
+Desenvolviéndonos en este sector de la economía, creciendo para acompañar el desarrollo de nuevos negocios y trabajar con las industrias más importantes del país como la metalúrgica, la textil, la energía, minera, los servicios públicos, la alimenticia, la construcción, la automotriz, la química y petroquímica, entre otras.
+
+En la actualidad con más de 30 años de historia nos hemos posicionado como una de las empresas referentes en el mercado Industrial y de la construcción en Argentina.</p>
 </div>
 
 

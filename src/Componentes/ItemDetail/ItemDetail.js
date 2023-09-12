@@ -18,7 +18,7 @@ const ItemDetail =({product})=>{
       
         setTimeout(() => {
           setIsLoading(false); // Cambiar el estado de carga a falso después de un cierto tiempo
-        }, 1000);},[]);
+        }, 2000);},[]);
 
    const onAdd=(quantity)=>{setGotoCart(true);
     addProduct(product,quantity)}

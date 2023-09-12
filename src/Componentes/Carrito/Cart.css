@@ -58,7 +58,7 @@
     display: grid;
     width: 100%;
     grid-template-columns: 50% 17.5% 15% 17.5%;
-    justify-items: start;
+    justify-items: center;
     padding: 1%;
     font-size: 1.2em;
     border: solid 1px;
