@@ -11,12 +11,14 @@
    
    
   }
-  
+
   .Navbar img {
   
     display: flex;
     position: initial;
-    width: 15%;
+   
+
+    height: 1%;
   }
   .Buscador {
     width:70%;
@@ -26,21 +28,32 @@
    
   }
   .PrimerBar{
-    width: 100%;
-  align-items: center;
+ background-color: rgba(128, 128, 128, 0.13);
+margin: 1%;  
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+border-radius: 5px;
+width: 100%;
+    justify-content: center;
+
+
   display: flex;
-  background-color: rgb(255, 255, 255);
-  }
+
+
+
+
+
+  } 
   .logo {
     padding: 0px;
     margin:0px;
     width: 17%;
+    height: 100%;
   }
   .PrimerBar img {
-    width: 100%;
+    width: 300%;
     height: auto;
-  margin: 5px;
-padding: 0px;  }
+    align-items: center;
+ }
   
 .SegundaBar{
   height: 100%;
@@ -57,13 +70,24 @@ padding: 0px;  }
   
   }
 
+ 
   .CartIcon {
-    position: relative;
-
+    display: flex;
+    justify-content: end;
+height: 100%;
+margin: auto;
+text-decoration: none;
 
   
-   
+
   }
+ .cartStyle {
+  height: 100%;
+
+  border-radius: 100%;
+  padding: 50%;
+  
+ }
   /*Carrousel*/
 
 .carousel-indicators {
@@ -111,14 +135,18 @@ padding: 0px;  }
     
     
   }
+ 
   @media(max-width:600px) {
     .Categorias {  display: none;
       
   
     }
+
     .Lupa {
 
       display: none;
+    
+
      }
    
      .PrimerBar img {
@@ -146,11 +174,7 @@ padding: 0px;  }
       
   
     }
-    .Lupa {
-
-      display: none;
-     }
-   
+  
   
   }
   
@@ -178,8 +202,6 @@ padding: 0px;  }
 
 
 
-
-
 .open {
   display: grid;
   
@@ -187,36 +209,45 @@ padding: 0px;  }
 
 
 
-.searcher input{
 
-width: 50%;
-height: 5vh;
-
-
-
- 
- 
-
-
-}
 .searcher {
   display: flex;
-  width: 75%;
-  height: 2vw; 
   position: relative;
-  align-items:  center;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   justify-content: center;
-  font-size: 1.5vw;
+  border: none;
+  height: 50%;
+  background-color: rgba(128, 128, 128, 0.2);
 
 
+
+
+
+
+}
+.searcher input {
+ border: 1px solid rgba(128, 128, 128, 0.5);
+ border-radius: 3px;  
+ background-color: transparent;
+
+ 
 }
 .searcher input::placeholder{
-font: 500;
-font-size: 1.5vw;
-text-align: center;
-text-indent: 0;
+  text-align: start; 
+  font: 500;
+  font-size:small;
+  border: 0px;
+  text-indent: 0;
 }
-
+.lupaContainer {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.5);
+  height: auto;
+  border: solid 1px rgba(128, 128, 128, 0.5);
+  border-radius: 3px;
+}
 
 body
 {

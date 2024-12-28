@@ -1,0 +1,37 @@
+
+
+
+.slider{
+    width: 100%; 
+    display: flex;
+
+   animation: slide 30s infinite linear;
+
+
+ 
+color: white;
+font-weight: 700;  }
+.slider>* {
+    width: 25%;
+
+ 
+    left: 0px;
+    margin-top: auto;
+    margin-bottom:auto ;
+    padding: 0% 0% 0.5%;
+    padding-top: 0.5%;
+
+}
+
+
+
+
+
+  /* Animación */
+  @keyframes slide {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%)};     
+ 
+ 
+
+  }

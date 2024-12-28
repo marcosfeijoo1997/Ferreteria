@@ -8,10 +8,12 @@ import ItemDetailContainer from './Componentes/ItemDetail/ItemDetailContainer';
 import CartProvider from './Componentes/Carrito/CartContext';
 import Cart from './Componentes/Carrito/Cart'
 import { SearchProvider } from './Componentes/Navbar/SearchContext';
+import Slider from './Componentes/Slider/Slider';
 
 function App() {
   return (
     <div className="App">
+      <Slider/>
       
       
     <BrowserRouter>

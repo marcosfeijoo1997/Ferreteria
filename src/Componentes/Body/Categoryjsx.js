@@ -4,7 +4,7 @@ import CategoryList from './CategoryList'
 import { Link } from 'react-router-dom'
 import { useState,useEffect} from 'react'
 
-const Categoryjsx = ({isLoading,products,setPriceMax,setPriceMin}) => {
+const Categoryjsx = ({isLoading,products,setPriceMax,setPriceMin }) => {
 
   const [priceMinjsx,setPriceMinjsx]=useState('')
   const [priceMaxjsx,setPriceMaxjsx]=useState('')
@@ -27,7 +27,7 @@ const Categoryjsx = ({isLoading,products,setPriceMax,setPriceMin}) => {
       
       <div className="Card-container">
           {isLoading ? ( // Mostrar el cartel de carga si isLoading es true
-            <div>Cargando...</div>
+          <div className="spinner"></div>
           ) : (
             products.map((product) => (
               <Link className="Card" key={product.id} to={`/Detalle/${product.id}`}>

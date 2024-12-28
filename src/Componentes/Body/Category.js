@@ -16,6 +16,8 @@ const Category=()=>{
     const {search} = useSearchContext();
     const [priceMin,setPriceMin]=useState('')
     const [priceMax,setPriceMax]=useState('')
+
+
   
     useEffect(()=>{
       
@@ -180,10 +182,15 @@ const Category=()=>{
 },[categoriaId,subCategoriaId,search,priceMax,priceMin]);
 
 
+
+
+
+
+
 return (
 
 <div>
-<Categoryjsx products={products} isLoading={isLoading} setPriceMin={setPriceMin} setPriceMax={setPriceMax}/>
+<Categoryjsx products={products} isLoading={isLoading} setPriceMin={setPriceMin} setPriceMax={setPriceMax} />
 
 
 </div>

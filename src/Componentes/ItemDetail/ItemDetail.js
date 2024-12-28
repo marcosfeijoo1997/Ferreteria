@@ -22,7 +22,7 @@ const ItemDetail =({product})=>{
 
    const onAdd=(quantity)=>{setGotoCart(true);
     addProduct(product,quantity)}
-    return (isLoading?(<div>cargando...</div>):(
+    return (isLoading?(<div className="spinner"></div>):(
         <div className="detailContainer">
              <img src={product.imagen} alt="ProductImg3"/>
         <div className="TextContainer">

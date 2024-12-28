@@ -1,4 +1,4 @@
-import Logo from '../../Assets/logo_ferreteria-removebg-preview.png';
+
 import './Navbar.css'
 
 import {NavLink,Link} from 'react-router-dom';
@@ -7,6 +7,7 @@ import CartWidget from '../Carrito/CartWidget';
 import Searcher from './Searcher';
 import { useSearchContext } from './SearchContext';
 import { useState } from 'react';
+import imagen from '../../Assets/logo_ferreteria-removebg-preview.png'
 
 
 
@@ -134,12 +135,13 @@ Seguridad
 </nav>
               
                 <NavLink className='logo' to='/'>
-                <img src={Logo} alt='ProductImg5'/></NavLink>
+              <div className='logo'>
+                <img src={imagen}/></div></NavLink>
            
              <Searcher  setSearch={setSearch}/>
          
       <NavLink to='/Cart'className="CartIcon">
-                <div >
+                <div className='cartStyle'>
                     <CartWidget/>      
                    
                 </div></NavLink>

@@ -157,6 +157,26 @@ font-family:math;
    
 }
 
+.cartWidgetStyle {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    list-style: none;
+    text-align: center;
+
+}
+.cartWidgetStyle span {
+    display: flex;
+    top: -54px;  
+    left: 22px;
+    position: relative;
+    background-color: rgba(0, 38, 255, 0.356);
+    justify-content: center;
+    border-radius: 100%;
+
+font-size: large;
+}
+
 .botones {
 
     display: flex;
