@@ -2,10 +2,13 @@
 
 
 .slider{
-    width: 100%; 
-    display: flex;
+    width: 100vw; 
+    display: flex;overflow: hidden;
+    
 
-   animation: slide 30s infinite linear;
+  
+
+
 
 
  
@@ -20,6 +23,7 @@ font-weight: 700;  }
     margin-bottom:auto ;
     padding: 0% 0% 0.5%;
     padding-top: 0.5%;
+    animation: 10s slide infinite;
 
 }
 

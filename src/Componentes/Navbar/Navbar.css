@@ -2,7 +2,10 @@
 :root {
   --navbar:rgba(206, 216, 224);
 }
-
+.Navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.212);
+}
 .Navbar ul li{
     display: inline-block;
     list-style: none;
@@ -28,19 +31,14 @@
    
   }
   .PrimerBar{
- background-color: rgba(128, 128, 128, 0.13);
-margin: 1%;  
+
+margin: auto;  
 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 border-radius: 5px;
-width: 100%;
+width: 100vw;
+padding: 0;
     justify-content: center;
-
-
   display: flex;
-
-
-
-
 
   } 
   .logo {
@@ -148,12 +146,15 @@ text-decoration: none;
     
 
      }
-   
+
      .PrimerBar img {
-      width: 30vw;
-      height: auto;
-    margin: 5px;
-  padding: 0px;  }
+display: none }
+  
+  .searcher input ::placeholder{
+    width: 1px;
+    color: red;
+
+  } 
   
   }
   @media(min-width:600px){
@@ -213,13 +214,12 @@ text-decoration: none;
 .searcher {
   display: flex;
   position: relative;
-  margin-left: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+width: 40%;
+
+
   justify-content: center;
   border: none;
-  height: 50%;
-  background-color: rgba(128, 128, 128, 0.2);
+
 
 
 
@@ -231,22 +231,24 @@ text-decoration: none;
  border: 1px solid rgba(128, 128, 128, 0.5);
  border-radius: 3px;  
  background-color: transparent;
+ width: 100%;
+ height: 50%;
+ margin: auto;
 
  
 }
 .searcher input::placeholder{
   text-align: start; 
   font: 500;
-  font-size:small;
+  font-size:x-large;
   border: 0px;
   text-indent: 0;
 }
 .lupaContainer {
   cursor: pointer;
-  background-color: rgba(128, 128, 128, 0.5);
   height: auto;
-  border: solid 1px rgba(128, 128, 128, 0.5);
   border-radius: 3px;
+  margin: auto;
 }
 
 body
